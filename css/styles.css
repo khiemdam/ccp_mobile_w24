@@ -4,6 +4,16 @@
     line-height: 1.5;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .animation {
+        animation: none !important; /* Disable animation */
+    }
+}
+
+body {
+    background-color: #BFD8AF;
+}
+
 .main-img {
     display: block;
     margin-left: auto;
@@ -31,6 +41,7 @@
 
 nav {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: #D4E7C5;
 }
 
 nav ul {
@@ -56,13 +67,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #d3d3d3;
+    background-color: #abcd92;
 }
 
 .active {
     font-weight: bold;
-    background-color: black;
-    color: white;
+    background-color: #99BC85;
+    color: black;
 }
 
 h1 {
@@ -93,11 +104,20 @@ h3 {
     margin: 30px 20px 30px;
 }
 
+.info-paragraph a {
+    color: #445539;
+}
+
+.info-paragraph a:hover {
+    background-color: #abcd92;
+}
+
 .page-item {
     margin: 30px 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 0 5px 20px 0 rgba(0,0,0,.2);
+    background-color: #E1F0DA;
 }
 
 .grid-gallery {
@@ -106,6 +126,6 @@ h3 {
     padding: 20px;
     align-items: center;
     justify-items: center;
-    background-color: rgb(243, 242, 242);
+    background-color: #c8e2b9;
     grid-gap: 10px
 }
